@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+
+#root{
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 9px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Roundness of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+    border-radius: 10px; /* Roundness of the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb when hovered */
+  }
+  
+  /* Hide the scrollbar buttons (up/down) */
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+
+
+.container{
+    min-width: 86%;
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.hero{
+    padding: 20px 500px;
+    padding-bottom: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: -webkit-fill-available;
+}
+
+
+.recent-prompt{
+    display: flex;
+    min-height: 6vh;
+    width: 43vw;
+}
+
+.given-prompt{
+    width: 39vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}
+
+.chat-pfp{
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.chat-pfp img{
+    height: 40px;
+}
+
+.result{
+    display: flex;
+}
+
+#response{
+    width: 39vw;
+    padding: 10px;
+    line-height: 2;
+    animation: fadeIn 1s ease-in;
+}
+
+#response ul {
+    padding-left: 40px;
+}
+#response ul ul {
+    padding-left: 20px;
+}
+
+#response > pre > code{
+        background-color: #e9eef6;
+        border: none;
+        padding: 30px;
+        border-radius: 10px;
+        overflow-x: auto;
+        display: flex;
+        position: relative;
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+h4{
+    margin-top: 25px;
+}
+
+.loader{
+    width: 39vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.prompt{
+    width: -webkit-fill-available;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px -19px 25px 0px rgba(255,255,255,0.95);
+-webkit-box-shadow: -1px -19px 25px 0px rgba(255,255,255,0.95);
+-moz-box-shadow: -1px -19px 25px 0px rgba(255,255,255,0.95);
+
+}
+
+.input-container input{
+    font-size: large;
+    width: 90vh;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #f0f4f9;
+    padding-left: 30px;
+    padding-right: 150px;
+    border: none;
+    outline: none;
+}
+
+.input-container input::placeholder{
+    font-size: large;
+}
+
+.input-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input-icons{
+    width: 86px;
+    position: absolute;
+    display: flex;
+    margin-right: 20px;
+    background-color: #f0f4f9;
+    transition: width 0.4s ease;
+}
+
+.input-icons img{
+    height: 43px;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+.input-icons.expanded {
+    width: 129px; 
+  }
+  
+  /* For the send button */
+  .scale-up {
+    cursor: pointer;
+    animation: scale-up 0.4s forwards;
+  }
+  
+  @keyframes scale-up {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.input-icons img:hover{
+    background-color: #cad2da;
+}
+

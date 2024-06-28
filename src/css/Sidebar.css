@@ -1,0 +1,141 @@
+
+.sidebar{
+    height: 100%;
+    width: 7.5vh;
+    padding-top: 29px;
+    display: flex;
+    padding-left: 9px;
+    padding-right: 18px;
+    flex-direction: column;
+    justify-self: flex-start;
+    background-color: #f0f4f9;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar img{
+    width: 22px;
+}
+
+.sidebar.open{
+    width: 284px;
+    z-index: 1002;
+    
+}
+
+.sidebar-top{
+    min-width: 50px;
+    display: flex;
+    gap: 54px;
+}
+
+
+.menu{
+    width: 50px;
+    height: 50px;
+    padding-top: 14px;
+    padding-left: 14px;
+    margin-bottom: 34px;
+    margin-top: -16px;
+    cursor: pointer;
+    
+}
+.menu:hover{
+    border-radius: 50%;
+    background-color: #cad2da
+
+}
+
+.chats{
+    height: 60%;
+}
+
+.new-chat{
+    background-color: #e2e8ee;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 20px;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.new-chat img{
+    width: 16px;
+}
+
+.new-chat:hover{
+    background-color: #cad2da;
+}
+
+
+.new-chat.open{
+    width: 140px;
+    padding: 0 12px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#new-text{
+    margin-left: 17px;
+    opacity: 0;
+    
+}
+
+#new-text.visible{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#chats{
+    height: 66vh;
+    padding: 36px 9px;
+    opacity: 0;
+    overflow-y: auto;
+}
+
+#chats.visible{
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+#recent{
+    margin-bottom: 15px;
+}
+
+.bottom-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 40px;
+    margin-left: 4px;
+
+}
+
+.bottom-group{
+    height: 40px;
+    width: auto;
+    padding: 9px;
+    display: flex;
+    border-radius: 18px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.bottom-group:hover{
+    background-color: #cad2da;
+    transition: all 0.3s ease-out;
+}
+
+.bottom-group.selected{
+    background-color: #d3e3fd;
+}

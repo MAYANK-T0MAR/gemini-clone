@@ -1,0 +1,37 @@
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+
+#special-text{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    font-size: 55px;
+    font-weight: 450;
+    background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #fff 75%, #fff 100%);
+    background: -webkit-linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #fff 75%, #fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%, 100%;
+    word-spacing: -7px;
+}
+
+#basic-text{
+    font-size: 55px;
+    font-weight: 450;
+    color: #c4c7c5;
+}
+
+.welcome-msg{
+    line-height: 52px;
+}
+
+.welcome-cards{
+    height: 22vh;
+    display: flex;
+    gap: 10px;
+    margin-top: 70px;
+}

@@ -1,0 +1,27 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: min-content;
+    background-color: #f0f4f9;
+    border-radius: 10%;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cards:hover{
+    background-color: #dde3ea;
+}
+
+.cards img{
+    height: 40px;
+    width: 40px;
+    margin-left: 109px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.card-content{
+    height: 110px;
+}

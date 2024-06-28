@@ -1,0 +1,56 @@
+.header{
+    width: -webkit-fill-available;
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 2.5vh;
+    padding-right: 3vh;
+    font-size: 21px;
+    font-weight: 300;
+    color: #5f6368;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+   
+ 
+}
+
+
+.header-options{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#premium-btn{
+    width: 180px;
+    padding: 2px;
+    color: black;
+    font-size: small;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #dde3ea;
+}
+
+#premium-btn img{
+    width: 18%;
+    filter: sepia(100%);
+}
+
+#premium-btn:hover{
+    background-color: #cad2da
+}
+
+#doted-icon{
+    width: 15px;
+    
+}
+#user-icon{
+    width: 30px;
+}
