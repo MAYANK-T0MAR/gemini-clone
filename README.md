@@ -5,12 +5,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/MAYANK-T0MAR/gemini-clone)](https://github.com/MAYANK-T0MAR/gemini-clone/stargazers)
 
 
-
-## Live Demo
-
-Check out the live demo of the project [here](https://mayank-t0mar.github.io/gemini-clone/).
-
-
 ## Overview
 
 Gemini Clone is a web application that mimics the functionality of the Gemini AI using the Gemini API. Built with Vite and React, this project allows users to interact with the AI, record their prompt history, and switch between prompts easily.
