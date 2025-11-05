@@ -41,7 +41,7 @@ function Sidebar() {
             <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <div className="sidebar-top">
                     <div onClick={toggleSidebar} className="menu">
-                        <img src="\src\assets\menu_icon.png" alt="" />
+                        <img src="../assets/menu_icon.png" alt="" />
                     </div>
 
                 </div>
@@ -49,7 +49,7 @@ function Sidebar() {
                     setshowResult(false);
                     setselectedPrompt(null);
                 }} className={`new-chat ${sidebarOpen ? 'open' : ''}`}>
-                    <img src="\src\assets\plus_icon.png" alt="" />
+                    <img src="../assets/plus_icon.png" alt="" />
                     <span id='new-text' className={transitionCompleted ? 'visible' : ''}>
                         New Chat
                     </span>
@@ -62,7 +62,7 @@ function Sidebar() {
                             {previousPrompts.map((item) => {
                                 return (
                                     <div onClick={() => switchPrompts(item.id)} className={`bottom-group ${selectedPrompt === item.id ? 'selected' : ''}`} key={item.id}>
-                                        <img src="\src\assets\message_icon.png" alt="" />
+                                        <img src="../assets/message_icon.png" alt="" />
                                         <span id="new-text" className={transitionCompleted ? 'visible' : ''}>
                                             {item.prompt.length > 20 ? item.prompt.slice(0, 20) + "..." : item.prompt}
                                         </span>
@@ -76,19 +76,19 @@ function Sidebar() {
                 </div>
                 <div className="bottom-icons">
                     <div className='bottom-group'>
-                        <img src="\src\assets\question_icon.png" alt="" />
+                        <img src="../assets/question_icon.png" alt="" />
                         <span id='new-text' className={transitionCompleted ? 'visible' : ''}>
                             Help
                         </span>
                     </div>
                     <div className="bottom-group">
-                        <img src="\src\assets\history_icon.png" alt="" />
+                        <img src="../assets/history_icon.png" alt="" />
                         <span id='new-text' className={transitionCompleted ? 'visible' : ''}>
                             Activity
                         </span>
                     </div>
                     <div className="bottom-group">
-                        <img src="\src\assets\setting_icon.png" alt="" />
+                        <img src="../assets/setting_icon.png" alt="" />
                         <span id='new-text' className={transitionCompleted ? 'visible' : ''}>
                             Settings
                         </span>

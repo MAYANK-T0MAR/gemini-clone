@@ -9,9 +9,12 @@ import { marked } from "marked";
 
 
 
-const apiKey = "AIzaSyD97p_786VEtZ5Uoji-ndBCqw5QmePrW2o";
-const genAI = new GoogleGenerativeAI(apiKey);
+// const apiKey = "AIzaSyD97p_786VEtZ5Uoji-ndBCqw5QmePrW2o";
+// const genAI = new GoogleGenerativeAI(apiKey);
 
+const MODEL_NAME = "gemini-2.5-flash";
+const API_KEY = process.env.GEMINI_API;
+const genAI = new GoogleGenerativeAI(API_KEY)
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
 });
