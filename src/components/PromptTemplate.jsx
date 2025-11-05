@@ -9,7 +9,7 @@ function PromptTemplate({ prompt }) {
             <div className="card-content">
                 {prompt}
             </div>
-            <img src="\src\assets\bulb_icon.png" alt="" />
+            <img src="/bulb_icon.png" alt="" />
         </div>
     )
 }

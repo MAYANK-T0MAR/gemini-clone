@@ -22,13 +22,13 @@ function App() {
             <>
               <div className="recent-prompt">
                 <div className="chat-pfp">
-                  <img src="\src\assets\user_icon.png" alt="" />
+                  <img src="/user_icon.png" alt="" />
                 </div>
                 <div className="given-prompt">{recentPrompt}</div>
               </div>
               <div className="result">
                 <div className='chat-pfp'>
-                  <img src="\src\assets\gemini_icon.png" alt="" />
+                  <img src="/gemini_icon.png" alt="" />
                 </div>
                 {resultLoading
                   ? <div className='loader'>
@@ -48,10 +48,10 @@ function App() {
           <div className="input-container">
             <input onChange={(e) => setinput(e.target.value)} value={input} type="text" placeholder='Enter a prompt here' />
             <div className={`input-icons ${input !== "" ? "expanded" : ""}`}>
-              <img src="\src\assets\gallery_icon.png" alt="" />
-              <img src="\src\assets\mic_icon.png" alt="" />
+              <img src="/gallery_icon.png" alt="" />
+              <img src="/mic_icon.png" alt="" />
               {(input != "")
-                ? <img onClick={() => onSent()} src="\src\assets\send_icon.png" alt="" className='scale-up' />
+                ? <img onClick={() => onSent()} src="/send_icon.png" alt="" className='scale-up' />
                 : <></>
               }
             </div>
