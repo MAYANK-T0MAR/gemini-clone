@@ -88,7 +88,7 @@ function Sidebar() {
                         </span>
                     </div>
                     <div className="bottom-group">
-                        <img src="../assets/setting_icon.png" alt="" />
+                        <img src="/setting_icon.png" alt="" />
                         <span id='new-text' className={transitionCompleted ? 'visible' : ''}>
                             Settings
                         </span>
